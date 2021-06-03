@@ -1,0 +1,63 @@
+
+.btn {
+  background: transparent;
+  color: #495057;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 2rem;
+  height: 38px;
+}
+.btn:hover {
+  background-color: #008FFF;
+  color: #fff;
+}
+.upload {
+  position: relative;
+  div:first-child {
+    left: 0 !important;
+    position: absolute !important;
+  }
+  div:nth-child(2) {
+    div:first-child {
+      div:first-child {
+        top: 1rem !important;
+        color: white;
+        padding: 0 !important;
+        border: none !important;
+        div:first-child {
+          > span > span {
+            overflow: visible !important;
+            position: absolute !important;
+            button {
+              > * {
+                color: red !important;
+              }
+            }
+          }
+          .ant-upload-list-item-info {
+            .ant-upload-span {
+              .ant-upload-text-icon {
+                width: 1rem !important;
+                .anticon {
+                  color: white !important;
+                  top: -1rem !important
+                }
+              }
+              span:first-child {
+                overflow: visible !important;
+              }
+              .ant-upload-list-item-card-action {
+                button {
+                  > * {
+                    color: red !important;
+                  }
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+  }}
+
+
+    

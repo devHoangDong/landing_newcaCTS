@@ -1,0 +1,36 @@
+.nav {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    > *{
+        width: 25%;
+    }
+}
+
+.dot {
+    color: #fff;
+    cursor: pointer;
+    font: bold 1.5rem "GSB";
+    line-height: 1;
+    opacity: .25;
+    text-shadow: none;
+    transition: opacity 1s ease,
+    text-shadow 1s ease;
+    will-change: opacity, text-shadow;
+}
+
+.active {
+    color: rgba(0, 143, 255, 1);
+    opacity: 1;
+    text-shadow: 0 0px 8px;
+    span:after {
+        font-family: "Font Awesome 5 Duotone"; font-weight: 900; content: "\10f324";
+    }
+    span:before {
+        font-family: "Font Awesome 5 Duotone"; font-weight: 900; content: "\f324";
+    }
+    span:last-child {
+        width: 2rem;
+    }
+}

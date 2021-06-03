@@ -1,0 +1,42 @@
+.p-fileupload {
+    display: inline-flex;
+}
+.p-fileupload .p-fileupload-buttonbar {
+        background: none;
+        padding: 0;
+        border: none;
+        display: inline-block;
+}
+.p-fileupload .p-fileupload-buttonbar .p-button {
+    background: none;
+    border: none;
+}
+.p-fileupload .p-fileupload-buttonbar .p-button:first-child {
+    position: absolute;
+    right: .5rem;
+    bottom: 0;
+    border-radius: 2rem;
+}
+.p-fileupload .p-fileupload-buttonbar .p-button:nth-child(2) {
+    position: absolute;
+    right: .5rem;
+    bottom: -35px;
+    border-radius: 2rem;
+}
+.p-fileupload .p-fileupload-buttonbar .p-button:nth-child(3) {
+    position: absolute;
+    right: .5rem;
+    bottom: -70px;
+    border-radius: 2rem;
+}
+.p-fileupload .p-fileupload-content {
+    background: none;
+    border: none;
+}
+.p-fileupload .p-fileupload-content .p-fileupload-files .p-fileupload-row {
+    display: inline-flex;
+    width: calc( 25% - 1rem );
+}
+.test {
+    width: 50px;
+}

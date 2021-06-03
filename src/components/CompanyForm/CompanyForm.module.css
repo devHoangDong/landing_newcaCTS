@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.formContainer {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+  display: table;
+  color: #fff;
+  padding: 0rem 2rem 2rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.formContainer__title {
+  width: 100%;
+  height: 2rem;
+  font: bold 1.25rem 'GSB';
+  display: table-header-group;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.formContainer__select {
+  width: 100%;
+  display: table-row;
+}
+
+.formContainer__input {
+  height: 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer__input > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  height: 4rem;
+  /**
+              * Translate down and scale the label up to cover the placeholder,
+              * when following an input (with placeholder-shown support).
+              * Also make sure the label is only on one row, at max 2/3rds of the
+              * field—to make sure it scales properly and doesn't wrap.
+              */
+  /**
+              * By default, the placeholder should be transparent. Also, it should 
+              * inherit the transition.
+              */
+  /**
+              * Show the placeholder when the input is focused.
+              */
+  /**
+              * When the element is focused, remove the label transform.
+              * Also, do this when the placeholder is _not_ shown, i.e. when 
+              * there's something in the input at all.
+              */
+}
+
+.formContainer__input > * label {
+  text-align: left;
+  font: bold .8rem 'GSB';
+  line-height: .8rem;
+  margin-bottom: .5rem;
+}
+
+.formContainer__input > * label span {
+  color: red;
+}
+
+.formContainer__input > * input {
+  color: #fff !important;
+  font: normal 1rem 'GSR';
+  border-radius: 2rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  transition: border-color .15s ease-in-out , box-shadow .15s ease-in-out , -webkit-box-shadow .15s ease-in-out;
+}
+
+.formContainer__input > * input:focus {
+  color: #495057;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.formContainer__input > * label, .formContainer__input > * input {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  padding-right: 2rem;
+}
+
+.formContainer__input > * input:placeholder-shown + label {
+  cursor: text;
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: translate(1rem, 2.15rem) scale(1.25);
+          transform: translate(1rem, 2.15rem) scale(1.25);
+}
+
+.formContainer__input > * input:focus:placeholder-shown + label {
+  max-width: 100%;
+}
+
+.formContainer__input > * input::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.formContainer__input > * input:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.formContainer__input > * input::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.formContainer__input > * input::placeholder {
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.formContainer__input > * input:focus::-webkit-input-placeholder {
+  opacity: .75;
+}
+
+.formContainer__input > * input:focus:-ms-input-placeholder {
+  opacity: .75;
+}
+
+.formContainer__input > * input:focus::-ms-input-placeholder {
+  opacity: .75;
+}
+
+.formContainer__input > * input:focus::placeholder {
+  opacity: .75;
+}
+
+.formContainer__input > * input:not(:placeholder-shown) + label,
+.formContainer__input > * input:focus + label {
+  -webkit-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  max-width: 75%;
+}
+
+.formContainer__input__fileConfirm {
+  position: relative;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .formContainer__input {
+    display: table-row;
+  }
+  .formContainer__input div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .formContainer__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formContainer__input div {
+    width: calc(25% - 2rem);
+  }
+}
+/*# sourceMappingURL=CompanyForm.module.css.map */

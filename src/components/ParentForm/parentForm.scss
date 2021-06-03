@@ -1,0 +1,33 @@
+.parentForm {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/space.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: auto;
+}
+.slick-dots {
+    height: 2rem !important;
+    top: 0;
+    text-align: center;
+    left: auto;
+    width: 100%;
+    margin-left: 2rem;
+    > li {
+        width: 20% !important;
+        text-indent: 0 !important;
+        border: 1px solid rgba(255,255,255,.3);
+        height: 32px !important;
+        a {
+            display: block;
+            height: 32px;
+        }
+    }
+    .slick__nav {
+        color: #fff;
+        
+    }
+    .slick-active {
+        background-color: rgba(0, 143, 255, 0.8);
+    }
+}

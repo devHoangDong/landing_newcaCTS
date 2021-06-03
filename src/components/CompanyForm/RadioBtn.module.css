@@ -1,0 +1,119 @@
+html, body {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  font: normal 1rem 'GSR';
+  -webkit-font-smoothing: antialiased;
+  color: #222;
+}
+
+.SelectContainer {
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .SelectContainer__Btn {
+    display: block;
+    float: none;
+  }
+  .btn-radio:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+html, body {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: #222;
+}
+
+.SelectContainer {
+  margin: auto;
+}
+
+.SelectContainer__Btn {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.SelectContainer__Btn:not(:first-child) {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-radio {
+    display: block;
+    float: none;
+  }
+  .btn-radio:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.SelectContainer__Btn svg {
+  fill: none;
+  vertical-align: middle;
+}
+
+.SelectContainer__Btn svg circle {
+  stroke-width: 2;
+  stroke: #C8CCD4;
+}
+
+.SelectContainer__Btn svg path {
+  stroke: #008FFF;
+}
+
+.SelectContainer__Btn svg path.inner {
+  stroke-width: 6;
+  stroke-dasharray: 19;
+  stroke-dashoffset: 19;
+}
+
+.SelectContainer__Btn svg path.outer {
+  stroke-width: 2;
+  stroke-dasharray: 57;
+  stroke-dashoffset: 57;
+}
+
+.SelectContainer__Btn input {
+  display: none;
+}
+
+.SelectContainer__Btn input:checked + svg path {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.SelectContainer__Btn input:checked + svg path.inner {
+  stroke-dashoffset: 38;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.SelectContainer__Btn input:checked + svg path.outer {
+  stroke-dashoffset: 0;
+}
+
+.SelectContainer__Btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=RadioBtn.module.css.map */
