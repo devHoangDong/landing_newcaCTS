@@ -15,7 +15,6 @@ function App() {
         <div className="App">
           <Route path="/" exact component={HomePage}></Route>
           <Route path="/register" exact component={ParentForm}></Route>
-          <PrivateRoute path="/register" exact component={ParentForm}></PrivateRoute>
         </div>
       </Switch>
     </Router>
